@@ -39,14 +39,6 @@ jobs:
           echo "COMMIT_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
           env
         shell: bash
-#      - name: Build and push Docker images
-#        uses: docker/build-push-action@v1
-#        with:
-#          username: ${{ secrets.DOCKER_USERNAME }}
-#          password: ${{ secrets.DOCKER_PASSWORD }}
-#          repository: ${{ secrets.DOCKER_ORGANIZATION }}/${GITHUB_REPOSITORY#*/}
-#          tag_with_ref: true
-#          tag_with_sha: true
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Docker meta
