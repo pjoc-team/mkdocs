@@ -34,6 +34,7 @@ RUN pip install pymdown-extensions;
 RUN pip install plantuml-markdown;
 #https://github.com/bharel/mkdocs-render-swagger-plugin
 RUN pip install mkdocs-render-swagger-plugin;
+RUN pip install mkdocs-static-i18n
 
 WORKDIR /docs
 #ENTRYPOINT ["mkdocs"]
